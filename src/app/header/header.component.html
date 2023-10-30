@@ -1,0 +1,24 @@
+
+<div class="nav-bar-outer" [class.expanded]="isExpanded" [class.fixed] = "fixed">
+    <div class="nav-bar-innner"  >
+        <div class="nav-bar-inner-left" >
+            <div class="logo">
+                <a href="#">a<span>v</span>o</a>
+            </div>
+        </div>
+      
+        <div class="nav-bar-inner-right" >
+            <ul class="expanded-ul">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon">
+            <button (click)="toggleMenu()">MENU</button>
+        </div>
+       
+    </div>
+</div>

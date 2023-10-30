@@ -1,0 +1,107 @@
+.monila-outer{
+    height: 50vw;
+    // border: solid 1px red;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monila-inner{
+    width: 80%;
+    height: 550px;
+    // border: solid 1px red;
+    h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .card-line{
+        height: 60%;
+        // border: solid 1px rebeccapurple;
+        display: flex;
+        overflow: hidden;
+
+
+        .card-outer{
+            height: 80%;
+            width: 300px;
+            // border: solid 1px rgb(190, 3, 118);
+            padding: 20px 24px ;
+        }
+        .card-inner{
+            height: 100%;
+            width: 300px;
+            // border: solid 1px gold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F3F3F3;
+            padding-left: 15px;
+            position: relative;
+            
+
+            p{
+                letter-spacing: 1px;
+                line-height: 2em;
+                color: rgb(160, 160, 180);
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .quote:before{
+                content: open-quote;
+                color: #d1002c;;
+                font-size: 60px;
+            }
+            .quote { quotes: '\201c' '\201d'; 
+                position: absolute;
+                top: -35px;
+                font-weight: 900;
+            }
+           
+            .charactor{
+                margin-top: 20px;
+                display: flex;
+
+                .img{
+                    width: 80px;
+                    height: 80px;
+                    // border: solid   1px red;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                .content{
+                        p{
+                        font-size: 20px;
+                        color: black;
+                        }
+                        span{
+                            font-size: 16px;
+                            color: rgb(160, 160, 180);;
+                        }
+                }
+            }
+
+        }
+    }
+}
+
+//--------------------------- media query --------------------------------------
+@media only screen and (max-width: 768px){
+    .monila-inner{
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .monila-outer{
+        margin-top: 200px !important;
+        margin-bottom: 50px;
+    }
+    .monila-inner{
+        width: 100vw !important;
+    }
+    .card-outer{
+
+        width: 100vw !important;
+    }
+}

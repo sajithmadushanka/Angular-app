@@ -1,0 +1,98 @@
+
+
+<!-- using swiper to slider animation  -->
+<swiper-container class="custom-swiper mySwiper"
+loop = "true"
+pagination = "true"
+
+>
+<swiper-slide>
+    <div class="play-btn">
+        <span class="material-symbols-outlined">
+            play_arrow
+            </span>
+    </div>
+<div class="main-section-outer one " [class.currentClass] = "!isActive" [@fadeInOut]="fadeInState">
+    <div class="main-section-inner" data-aos="fade-up">
+        <div class="main-section-inner-right">
+            <div class="numer-div">
+
+                <h4 class="number" > {{number1}}</h4>
+                 <div class="vertical-bar"></div>
+            </div>
+           <p>More than a hundred successful projects</p>
+        </div>
+        <div class="main-section-inner-left">
+            <h1>We Create Modern &amp; Minimal Website</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <button>Start Project</button>
+        </div>
+       
+    </div>
+</div>
+<div class="main-section-outer two" [class.currentClass] = "isActive" [@fadeInOut]="fadeInState">
+    <div class="main-section-inner">
+        <div class="main-section-inner-right">
+            <div class="numer-div">
+
+                <h4 class="number" > {{number2}}</h4>
+                 <div class="vertical-bar"></div>
+            </div>
+           <p>Years of Experienced</p>
+        </div>
+        <div class="main-section-inner-left">
+            <h1>We Create Modern &amp; Minimal Website</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <button>Explore Projects</button>
+        </div>
+       
+    </div>
+</div>
+</swiper-slide>
+>
+<swiper-slide>
+    <div class="play-btn">
+        <span class="material-symbols-outlined">
+            play_arrow
+            </span>
+    </div>
+<div class="main-section-outer two"  [class.currentClass] = "!isActive" [@fadeInOut]="fadeInState">
+    <div class="main-section-inner">
+        <div class="main-section-inner-right">
+            <div class="numer-div">
+
+                <h4 class="number" >{{number2}}</h4>
+                 <div class="vertical-bar"></div>
+            </div>
+           <p>Years of Experienced</p>
+        </div>
+        <div class="main-section-inner-left">
+            <h1>We Create Modern &amp; Minimal Website</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <button>Explore Projects</button>
+        </div>
+        
+    </div>
+</div>
+<div class="main-section-outer one" [class.currentClass] = "isActive" [@fadeInOut]="fadeInState">
+    <div class="main-section-inner">
+        <div class="main-section-inner-right">
+            <div class="numer-div">
+
+                <h4 class="number" > {{number1}}</h4>
+                 <div class="vertical-bar"></div>
+            </div>
+           <p>More than a hundred successful projects</p>
+        </div>
+        
+        <div class="main-section-inner-left">
+            <h1>We Create Modern &amp; Minimal Website</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <button>Start Project</button>
+        </div>
+       
+    </div>
+</div>
+</swiper-slide>
+
+</swiper-container>

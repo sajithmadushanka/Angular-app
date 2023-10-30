@@ -1,0 +1,95 @@
+// /* Style the container and bullets */
+// .custom-swiper {
+//     position: relative;
+//   }
+  
+//   .custom-swiper::part(bullet) {
+//     border: 1px solid gray;
+//     width: 20px;
+//     height: 20px;
+//     padding: 5px; /* Add padding inside the bullet */
+//     background-clip: content-box; /* Clip the background to the content box */
+//     background-color: blue; /* Set the background color */
+//   }
+  
+//   .custom-swiper::part(bullet-active) {
+//     border: 1px solid green;
+//     width: 20px;
+//     height: 20px;
+//     padding: 5px;
+//     background-clip: content-box; /* Clip the background to the content box */
+//     background-color: red; /* Set the background color */
+//   }
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: solid 1px red;
+}
+.card-line{
+    height: 60%;
+    width: 400px;
+    border: solid 1px rebeccapurple; 
+}
+
+.card-outer{
+    height: 80%;
+    width: 300px;
+    border: solid 1px rgb(190, 3, 118);
+    padding: 20px 24px ;
+}
+.card-inner{
+    height: 100%;
+    width: 300px;
+    border: solid 1px gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F3F3F3;
+    padding-left: 15px;
+    position: relative;
+    
+
+    p{
+        letter-spacing: 1px;
+        line-height: 2em;
+        color: rgb(160, 160, 180);
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .quote:before{
+        content: open-quote;
+        color: #d1002c;;
+        font-size: 60px;
+    }
+    .quote { quotes: '\201c' '\201d'; 
+        position: absolute;
+        top: -35px;
+        font-weight: 900;
+    }
+   
+    .charactor{
+        margin-top: 20px;
+        display: flex;
+
+        .img{
+            width: 80px;
+            height: 80px;
+            border: solid   1px red;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .content{
+                p{
+                font-size: 20px;
+                color: black;
+                }
+                span{
+                    font-size: 16px;
+                    color: rgb(160, 160, 180);;
+                }
+        }
+    }
+
+}

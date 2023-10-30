@@ -1,0 +1,27 @@
+
+@import 'aos/dist/aos.css';
+
+
+
+.custom-swiper {
+    position: relative;
+  }
+  
+  .custom-swiper::part(bullet) {
+    border: 1px solid gray;
+    width: 20px;
+    height: 20px;
+    padding: 1px; 
+    background-clip: content-box;
+    background-color: blue; 
+  }
+  
+  .custom-swiper::part(bullet-active) {
+    border: 1px solid green;
+    width: 20px;
+    height: 20px;
+    padding: 1px; /* Add padding inside the active bullet */
+    background-clip: content-box; /* Clip the background to the content box */
+    background-color: red; /* Set the background color */
+  }
+  
