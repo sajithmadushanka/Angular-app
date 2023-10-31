@@ -58,7 +58,7 @@
 // set bg imagess ------------------------------------------------------------
 .one{
     background-image: url("./assets/images/bg_1.jpg");
-    transition: opacity 1s; /* Adjust the duration as needed */
+    transition: opacity 1s; 
     opacity: 0;
 }
 .two{
@@ -163,9 +163,9 @@
         border: 1px solid gray;
         width: 10px;
         height: 10px;
-        padding: 1px; /* Add padding inside the bullet */
-        background-clip: content-box; /* Clip the background to the content box */
-        background-color:#fff; /* Set the background color */
+        padding: 1px; 
+        background-clip: content-box; 
+        background-color:#fff; 
       }
       
       .custom-swiper::part(bullet-active) {
@@ -173,8 +173,8 @@
         width: 10px;
         height: 10px;
         padding: 1px;
-        background-clip: content-box; /* Clip the background to the content box */
-        background-color:#fff; /* Set the background color */
+        background-clip: content-box; 
+        background-color:#fff; 
       }
 
 .currentClass{
