@@ -57,12 +57,12 @@
 
 // set bg imagess ------------------------------------------------------------
 .one{
-    background-image: url("/assets/images/bg_1.jpg");
+    background-image: url("../../assets/images/bg_1.jpg");
     transition: opacity 1s; 
     opacity: 0;
 }
 .two{
-    background-image: url("/assets/images/bg_2.jpg");
+    background-image: url("../../assets/images/bg_2.jpg");
 }
 
 //================================================

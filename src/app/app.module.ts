@@ -19,6 +19,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { RecentBlogComponent } from './recent-blog/recent-blog.component';
 import { FotterComponent } from './fotter/fotter.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 register();
 @NgModule({
@@ -32,10 +33,7 @@ register();
     SwiperComponent,
     GetStartedComponent,
     RecentBlogComponent,
-    FotterComponent,
-  
-    
-  
+    FotterComponent, 
   ],
   imports: [
     BrowserModule,
@@ -44,7 +42,7 @@ register();
     BrowserAnimationsModule,
     DragDropModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
